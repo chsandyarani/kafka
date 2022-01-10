@@ -43,12 +43,13 @@ public class ConsumerFor_TextFile {
 		while (true) {
 			ConsumerRecords<String, String> records = Consumer.poll(100);
 			for (ConsumerRecord<String, String> record : records) {
-				//System.out.println("1111111111");
+			
 				try {
 					bufferedWriter.write(record.value().toString());
 					System.out.println(record.value().toString());
 					bufferedWriter.flush();
 					bufferedWriter.newLine();
+					System.out.print("");
 				
 				} catch (Exception e) {
 						
