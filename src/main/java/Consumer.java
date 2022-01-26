@@ -21,7 +21,7 @@ public class Consumer {
 		properties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,
 				"org.apache.kafka.common.serialization.StringDeserializer");
 		properties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, "Student_DeSerializer");
-		properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG,"groadgffadfu");
+		properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG,"groupname");
 		properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"earliest");
 		// creating consumer
 		KafkaConsumer<String, Student> Consumer = new KafkaConsumer(properties);

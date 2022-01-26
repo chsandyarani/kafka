@@ -30,7 +30,7 @@ public class ProducerForTextFile {
 			if (line == null) {
 
 			} else {
-				ProducerRecord<String, String> record = new ProducerRecord<String, String>("connect12", line);
+				ProducerRecord<String, String> record = new ProducerRecord<String, String>("connect1-k1", line);
 				System.out.println(record.value());
 				kafkaproducer.send(record);
 				kafkaproducer.flush();

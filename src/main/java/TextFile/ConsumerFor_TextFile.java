@@ -38,7 +38,7 @@ public class ConsumerFor_TextFile {
 		FileOutputStream fileOutputStream = new FileOutputStream(file);
 		// writing data
 		BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(fileOutputStream));
-		Consumer.subscribe(Collections.singletonList("connect12"));
+		Consumer.subscribe(Collections.singletonList("connect1-k1"));
 
 		while (true) {
 			ConsumerRecords<String, String> records = Consumer.poll(100);
