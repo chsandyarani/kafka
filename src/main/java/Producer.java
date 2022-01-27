@@ -21,7 +21,6 @@ public class Producer {
 		obj1.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,
 				"org.apache.kafka.common.serialization.StringSerializer");
 
-		// creating java class object
 
 		// creating object for producer
 		

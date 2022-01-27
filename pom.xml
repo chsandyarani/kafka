@@ -7,7 +7,7 @@
 	<description>producerapp</description>
 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka -->
+		<!-- http://mvnrepository.com/artifact/org.apache.kafka/kafka -->
 		<dependency>
 			<groupId>org.apache.kafka</groupId>
 			<artifactId>kafka_2.12</artifactId>
